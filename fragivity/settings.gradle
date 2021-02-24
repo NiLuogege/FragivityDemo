@@ -1,0 +1,4 @@
+include ':processor'
+include ':app'
+rootProject.name='fragivity'
+include ':library'
