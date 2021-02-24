@@ -1,5 +1,6 @@
 package com.github.fragivity.example
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -17,6 +18,7 @@ import com.github.fragivity.example.swipeback.SwipeBackFragment
 import com.github.fragivity.finish
 import com.github.fragivity.navigator
 import com.github.fragivity.push
+import com.niluogege.navigationdemo.DemoActivity
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : AbsBaseFragment(false) {
@@ -31,6 +33,10 @@ class HomeFragment : AbsBaseFragment(false) {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+
+        btn_navigation.setOnClickListener {
+            startActivity(Intent(requireContext(), DemoActivity::class.java))
+        }
 
         btn_launchmode.setOnClickListener {
             navigator.push(LaunchModeFragment::class)

@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.niluogege.navigationdemo">
+
+    <application>
+        <activity android:name=".DemoActivity" />
+    </application>
+</manifest>

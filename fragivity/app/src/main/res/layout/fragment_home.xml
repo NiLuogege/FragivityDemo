@@ -17,6 +17,12 @@
 
 
             <Button
+                android:id="@+id/btn_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="先学习 Navigation" />
+
+            <Button
                 android:id="@+id/btn_launchmode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
