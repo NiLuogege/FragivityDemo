@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_fragment1_to_fragment2"
             app:destination="@id/fragment2" />
+        <action
+            android:id="@+id/action_fragment1_to_fragment3"
+            app:destination="@id/fragment3" />
     </fragment>
     <fragment
         android:id="@+id/fragment2"
         android:name="com.niluogege.navigationdemo.Fragment2"
         android:label="fragment_2"
         tools:layout="@layout/fragment_2" />
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.niluogege.navigationdemo.Fragment3"
+        android:label="fragment_3"
+        tools:layout="@layout/fragment_3" />
 </navigation>
